@@ -1,5 +1,6 @@
 <div>
-    <table class="table">
+    <livewire:contact-create :contacts="$contacts"></livewire:contact-create>
+    <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">No.</th>
@@ -15,8 +16,8 @@
             <td>{{ $contact->name }}</td>
             <td>{{ $contact->phone }}</td>
             <td>
+                <button class="btn btn-info text-white">Update</button>
                 <button class="btn btn-danger">Delete</button>
-                <button class="btn btn-warning">Update</button>
             </td>
           </tr>
           @endforeach

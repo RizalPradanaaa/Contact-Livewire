@@ -13,7 +13,8 @@
                 <div class="card">
                     <div class="card-header">Dasboard</div>
                     <div class="card-body">
-                        @livewire('contact-index')
+                        {{-- @livewire('contact-index') --}}
+                        <livewire:contact-index></livewire:contact-index>
                     </div>
                 </div>
             </div>
